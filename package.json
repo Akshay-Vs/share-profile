@@ -12,7 +12,8 @@
   "dependencies": {
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.76.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.2.2",
