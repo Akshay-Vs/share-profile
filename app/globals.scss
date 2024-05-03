@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../shared/styles/colors.scss';
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  background: $bg-color;
 }
 
 @layer utilities {

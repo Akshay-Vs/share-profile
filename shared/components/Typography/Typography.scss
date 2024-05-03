@@ -1,0 +1,84 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.typography {
+  &__heading {
+    &--h2,
+    &--h3,
+    &--h4,
+    &--h5,
+    &--h6,
+    &--h7,
+    &--h8 {
+      @include secondary-font();
+    }
+
+    &--h1 {
+      @include primary-font($font-size: 92px, $font-weight: normal);
+
+      font-size: 92px;
+      color: $text-color;
+      font-weight: normal;
+
+      @media screen and (max-width: 768px) {
+        font-size: 58px;
+      }
+    }
+
+    &--h2 {
+      font-size: 72px;
+      color: $text-color;
+
+      @media screen and (max-width: 768px) {
+        font-size: 62px;
+      }
+    }
+
+    &--h3 {
+      font-size: 54px;
+      color: $text-color;
+
+      @media screen and (max-width: 768px) {
+        font-size: 46px;
+      }
+    }
+
+    &--h4 {
+      font-size: 42px;
+      color: $text-color;
+      @media screen and (max-width: 768px) {
+        font-size: 38px;
+      }
+    }
+
+    &--h5 {
+      font-size: 34px;
+      color: $text-color;
+      @media screen and (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+
+    &--h6 {
+      font-size: 20px;
+      color: $text-color;
+    }
+
+    &--h7 {
+      font-size: 18px;
+      color: $text-color;
+    }
+
+    &--h8 {
+      font-size: 16px;
+      color: $text-color;
+    }
+  }
+
+  &__paragraph {
+    @include secondary-font();
+    font-size: 18px;
+    font-weight: 400;
+    color: $accent-color;
+  }
+}
