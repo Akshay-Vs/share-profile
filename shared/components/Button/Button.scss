@@ -1,0 +1,27 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.button {
+  &--primary {
+    @include secondary-font($font-size: 18px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    gap: 2px;
+    padding: 18px 6px;
+
+    background-color: $primary-color;
+    color: $bg-color;
+
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      padding: 18px 12px;
+      background: darken($color: $primary-color, $amount: 10);
+    }
+  }
+}
