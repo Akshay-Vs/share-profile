@@ -1,0 +1,29 @@
+@import '../../styles/colors.scss';
+
+.profile-qr {
+  height: 100%;
+  width: 80%;
+
+  margin: 24px;
+  padding: 38px;
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  background-color: #1c2a2d;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 720px;
+  }
+
+  &__code {
+    background: $accent-color;
+    padding: 28px;
+    border-radius: 30px;
+    width: 268px;
+    height: 268px;
+  }
+}
