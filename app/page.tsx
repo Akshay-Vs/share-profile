@@ -1,4 +1,3 @@
-import Button from '@/shared/components/Button/Button';
 import {
   Name,
   ProfileDetails,

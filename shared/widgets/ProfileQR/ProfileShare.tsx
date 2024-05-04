@@ -6,7 +6,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   WhatsappShareButton,
   LinkedinShareButton,
@@ -15,7 +15,8 @@ import {
 } from 'react-share';
 
 const ProfileShare = () => {
-  const shareUrl = location.href;
+  const shareUrl = window && window.location.href;
+
   const title = 'Visit my profile';
   return (
     <div className="flex justify-center items-center gap-8 w-full mt-10 flex-wrap">
