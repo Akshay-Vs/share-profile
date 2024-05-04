@@ -8,7 +8,7 @@ const CopyLink = () => {
   const url = window.location.href;
   return (
     <div className="flex justify-center items-center sm:w-full w-[70%] h-full mt-8">
-      <Typography className="bg-[#ffffff43] p-3 px-8 rounded-2xl flex justify-center items-center gap-8">
+      <Typography className="bg-[#ffffff43] p-3 px-8 rounded-2xl flex justify-center items-center gap-8 overflow-hidden">
         <Typography.Paragraph>{url}</Typography.Paragraph>
         <FontAwesomeIcon
           icon={faClipboard}
