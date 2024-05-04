@@ -15,7 +15,7 @@ import {
 } from 'react-share';
 
 const ProfileShare = () => {
-  const shareUrl = window && window.location.href;
+  const shareUrl = window.location.href;
 
   const title = 'Visit my profile';
   return (
